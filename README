@@ -1,0 +1,6 @@
+run `make build` to compile
+run `make run` after build to execute
+run `make test` after build to run test cases
+run `make zip` after build to zip required files
+run `make clean` to clean up generated files
+run `make` to do clean, build, zip and test
