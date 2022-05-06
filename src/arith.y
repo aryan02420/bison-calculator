@@ -14,8 +14,8 @@
 %%
 
 start   : /* nothing */
-        | start expr EOL        { printf("= \x1b[92m%d\n\x1b[0m> ", $2); }
-        | start EOL             { printf("> "); } /* blank line or a comment */
+        | start expr EOL        { printf("\e[33m= \e[32m%d\n\e[33m> \e[0m", $2); }
+        | start EOL             { printf("\e[33m>\e[0m "); } /* blank line or a comment */
         ;
 
 expr    : shiftop
